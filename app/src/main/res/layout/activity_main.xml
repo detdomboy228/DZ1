@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layoutDescription="@xml/activity_main_scene"
+    tools:context=".MainActivity">
+
+    <com.stelladk.arclib.ArcLayout
+        android:id="@+id/field"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/field"
+        tools:ignore="ContentDescription"
+        app:ArcRadius="50dp"
+        app:TopLeftArc="inner"
+        app:BottomLeftArc="inner"
+        app:BottomRightArc="inner"
+        app:TopRightArc="inner"/>
+
+    <ImageView
+        android:id="@+id/ball"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ball"
+        tools:ignore="ContentDescription"
+        tools:layout_editor_absoluteX="130dp"
+        tools:layout_editor_absoluteY="6dp" />
+
+</androidx.constraintlayout.motion.widget.MotionLayout>
